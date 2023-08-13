@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+body {
+    height: 300vh;
+    background-image: url(home\ background\ 1600\ x\ 984.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+/* home page _______________________________ */
+
+.banner {
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 40%);
+}
+
+.banner-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 8vh;
+    background-color: rgba(41, 41, 41, 70%);
+}
+
+.banner-navigation ul {
+    display: flex;
+    list-style: none;
+}
+
+.banner-references {
+    margin-right: 70px;
+}
+
+.banner-references a {
+    color: white;
+    text-decoration: none;
+    margin-right: 100;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+.banner-person {
+    position: absolute;
+    right: 100px;
+    bottom: 0;
+    height: 100vh;
+}
+
+.banner-rectangle {
+    height: 1070px;
+    width: 520px;
+    transform: rotate(23deg);
+    position: absolute;
+    top: -140px;
+    right: 140px;
+    background-color: rgba(217, 217, 217, 46%);
+}
