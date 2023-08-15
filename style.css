@@ -95,3 +95,44 @@ body {
 }
 
 /* ABOUT ME __________________________ */
+
+.about {
+    position: absolute;
+    z-index: 2;
+    height: 100vh;
+    background-color: rgba(41, 41, 41, 100%);
+}
+
+.about-heder {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 25vh;
+}
+
+.header-square {
+    margin-left: 50px;
+    height: 110px;
+    width: 110px;
+    border: solid rgb(239, 199, 50) 13px;
+}
+
+.heder-name {
+    margin-left: -60px;
+    padding: 12px 0 12px 0;
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    background-color: rgba(41, 41, 41, 100%);
+}
+
+
+
+
+
+
+
+.description-container {
+    display: flex;
+}
