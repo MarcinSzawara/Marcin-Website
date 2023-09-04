@@ -100,6 +100,7 @@ body {
     position: absolute;
     z-index: 2;
     height: 100vh;
+    width: 100%;
     background-color: rgba(41, 41, 41, 100%);
 }
 
@@ -112,14 +113,14 @@ body {
 
 .header-square {
     margin-left: 50px;
-    height: 110px;
-    width: 110px;
+    height: 80px;
+    width: 80px;
     border: solid rgb(239, 199, 50) 13px;
 }
 
 .heder-name {
-    margin-left: -60px;
-    padding: 12px 0 12px 0;
+    margin-left: -40px;
+    padding: 5px 0 5px 0;
     color: rgb(255, 255, 255);
     font-size: 35px;
     font-family: 'Montserrat', sans-serif;
@@ -135,4 +136,41 @@ body {
 
 .description-container {
     display: flex;
+}
+
+.about-description {
+    margin: 4vh 0 0 5vw;
+    width: 40vw;
+}
+
+.description-welcome {
+    margin-bottom: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 55px;
+    color: rgb(239, 199, 50);
+}
+
+.description-content {
+    font-size: 18px;
+    font-family: 'Overpass', sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+.about-person {
+    position: absolute;
+    top: 20vh;
+    right: 14vw;
+}
+
+.person-frame {
+    height: 60vh;
+    width: 60vh;
+    border: 10px solid rgb(239, 199, 50);
+    transform: rotate(-74deg);
+    box-shadow: -4px 4px 10px white;
+}
+
+.person-image {
+    height: 60vh;
+    transform: rotate(74deg);
 }
