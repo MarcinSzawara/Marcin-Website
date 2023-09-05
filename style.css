@@ -5,7 +5,6 @@
 }
 
 body {
-    height: 300vh;
     background-image: url(home\ background\ 1600\ x\ 984.jpg);
     background-position: center;
     background-attachment: fixed;
@@ -97,7 +96,7 @@ body {
 /* ABOUT ME __________________________ */
 
 .about {
-    position: absolute;
+    position: relative;
     z-index: 2;
     height: 100vh;
     width: 100%;
@@ -128,12 +127,6 @@ body {
     background-color: rgba(41, 41, 41, 100%);
 }
 
-
-
-
-
-
-
 .description-container {
     display: flex;
 }
@@ -145,15 +138,15 @@ body {
 
 .description-welcome {
     margin-bottom: 40px;
+    color: rgb(239, 199, 50);
     font-family: 'Roboto', sans-serif;
     font-size: 55px;
-    color: rgb(239, 199, 50);
 }
 
 .description-content {
+    color: rgb(255, 255, 255);
     font-size: 18px;
     font-family: 'Overpass', sans-serif;
-    color: rgb(255, 255, 255);
 }
 
 .about-person {
@@ -163,14 +156,58 @@ body {
 }
 
 .person-frame {
+    transform: rotate(-74deg);
     height: 60vh;
     width: 60vh;
     border: 10px solid rgb(239, 199, 50);
-    transform: rotate(-74deg);
     box-shadow: -4px 4px 10px white;
 }
 
 .person-image {
     height: 60vh;
     transform: rotate(74deg);
+}
+
+/* FOOTER __________________________ */
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 40vh;
+    width: 100%;
+    background-color: rgb(3, 3, 3);
+}
+
+.footer section {
+    margin-top: 10vh;
+    width: 20%;
+}
+
+.nav-header, .email-header {
+    margin-bottom: 3vh;
+    color: rgb(255, 255, 255);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-reference ul li {
+    list-style: none;
+    margin-bottom: 1vh;
+ }
+
+.nav-reference ul li a, .email-adress, .inscription {
+   display: flex;
+   color: white;
+   text-decoration: none;
+   font-family: 'Roboto', sans-serif;
+}
+
+.align {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1vw;
+    width: 20px;
 }
