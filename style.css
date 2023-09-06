@@ -103,7 +103,7 @@ body {
     background-color: rgba(41, 41, 41, 100%);
 }
 
-.about-heder {
+.about-heder ,.stack-header  {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -114,10 +114,12 @@ body {
     margin-left: 50px;
     height: 80px;
     width: 80px;
-    border: solid rgb(239, 199, 50) 13px;
+    border-top: solid rgb(239, 199, 50) 13px;
+    border-left: solid rgb(239, 199, 50) 13px;
+    border-bottom: solid rgb(239, 199, 50) 13px;
 }
 
-.heder-name {
+.heder-name , .stack-name {
     margin-left: -40px;
     padding: 5px 0 5px 0;
     color: rgb(255, 255, 255);
@@ -168,12 +170,72 @@ body {
     transform: rotate(74deg);
 }
 
+/* STACK __________________________ */
+
+.stack {
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 40%);
+}
+
+.stack-name {
+    background-color: rgba(41, 41, 41, 0%);
+}
+
+.stack-container {
+    display: flex;
+    margin: -9vh 10vw 0 10vw;
+}
+
+.stack-container section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+    flex-basis: 50%;
+    flex-wrap: wrap;
+}
+
+.lightbulb-img {
+    height: 50vh;
+}
+
+.stack-container section div {
+    margin: 0 5vw 0 5vw;
+}
+
+.stack-icon {
+    height: 15vh;
+    flex-grow: 1;
+}
+
+.name {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: 'Overpass', sans-serif;
+    font-size: 3vh;
+    margin-top: 2vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* FOOTER __________________________ */
 
 .footer {
     display: flex;
     justify-content: space-around;
-    aligSn-items: flex-start;
+    align-items: flex-start;
     height: 40vh;
     width: 100%;
     background-color: rgb(3, 3, 3);
