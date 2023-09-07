@@ -15,13 +15,13 @@
 
     <!--Nagłówek_____________________________________-->
 
-    <header class="banner">
+    <header class="banner" id="home-anchor">
         <nav class="banner-navigation">
             <ul>
-                <li class="banner-references"><a href="#">About Me</a></li>
-                <li class="banner-references"><a href="#">Software stack</a></li>
-                <li class="banner-references"><a href="#">Project</a></li>
-                <li class="banner-references"><a href="#">Contact</a></li>
+                <li class="banner-references"><a href="#about-anchor">About Me</a></li>
+                <li class="banner-references"><a href="#stack-anchor">Software stack</a></li>
+                <li class="banner-references"><a href="#projects-anchor">Project</a></li>
+                <li class="banner-references"><a href="#footer-anchor">Contact</a></li>
             </ul>
         </nav>
         <section class="banner-description">
@@ -36,10 +36,11 @@
 
 <!--Główna Strona_________________________________________--->
 
+    <main class="main">
+
 <!--Sekcja O Mnie_________________________________________-->
 
-    <main class="main">
-        <section class="about">
+        <section class="about" id="about-anchor">
             <header class="about-heder">
                 <div class="header-square"></div>
                 <p class="heder-name">About Me</p>
@@ -59,7 +60,7 @@
 
 <!--Sekcja Stack Technologiczny__________________________-->
 
-        <section class="stack">
+        <section class="stack" id="stack-anchor">
             <header class="stack-header">
                 <div class="header-square"></div>
                 <p class="stack-name">Technological Stack</p>
@@ -90,7 +91,7 @@
                         <p class="name">Angular</p>
                     </div>
                     <div>
-                        <img class="stack-icon git" src="GitHub.svg" alt="GitHub icon">
+                        <img class="stack-icon git" src="GitHubWhite.svg" alt="GitHub icon">
                         <p class="name">GitHub</p>
                     </div>
                 </section>
@@ -101,49 +102,77 @@
 
 <!--Seckcja Projekty ___________________________-->
 
-        <section class="projects">
-            <header>
-                <p>Projects</p>
+        <section class="projects" id="projects-anchor">
+            <header class="projects-header">
                 <div class="header-square"></div>
+                <p class="projects-name">Projects</p>
             </header>
-            <article>
-                <i class=""></i>
-                <p>click!</p>
-            </article>
-            <article class="first-project">
-                <i class=""></i>
-                <p></p>
-                <p></p>
-            </article>
-            <article class="second-project">
-                <i class=""></i>
-                <p></p>
-                <p></p>
-            </article>
-            <article class="third-project">
-                <i class=""></i>
-                <p></p>
-                <p></p>
-            </article>
+            <section class="project-container">
+                <section class="git-section">
+                    <div class="circle-external">
+                        <div class="circle-internal">
+                            <img class="git-icon" src="GitHubBlack.svg" alt="GitHub icon">
+                            <p class="click git-label">GitHub</p>
+                            <p class="click">click!</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="project-section">
+                    <div class="project">
+                        <div class="circle">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512"><style>svg{fill:#ffffff}</style><path d="M320 464c8.8 0 16-7.2 16-16V160H256c-17.7 0-32-14.3-32-32V48H64c-8.8 0-16 7.2-16 16V448c0 8.8 7.2 16 16 16H320zM0 64C0 28.7 28.7 0 64 0H229.5c17 0 33.3 6.7 45.3 18.7l90.5 90.5c12 12 18.7 28.3 18.7 45.3V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V64z"/></svg>
+                            </div>
+                        </div>
+                        <div class="text">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lacinia fermentum gravida.</p>
+                        </div>
+                        <div class="triangle"></div>
+                    </div>
+                    <div class="project">
+                        <div class="circle">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512"><style>svg{fill:#ffffff}</style><path d="M320 464c8.8 0 16-7.2 16-16V160H256c-17.7 0-32-14.3-32-32V48H64c-8.8 0-16 7.2-16 16V448c0 8.8 7.2 16 16 16H320zM0 64C0 28.7 28.7 0 64 0H229.5c17 0 33.3 6.7 45.3 18.7l90.5 90.5c12 12 18.7 28.3 18.7 45.3V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V64z"/></svg>
+                            </div>
+                        </div>
+                        <div class="text">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lacinia fermentum gravida.</p>
+                        </div>
+                        <div class="triangle"></div>
+                    </div>
+                    <div class="project">
+                        <div class="circle">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512"><style>svg{fill:#ffffff}</style><path d="M320 464c8.8 0 16-7.2 16-16V160H256c-17.7 0-32-14.3-32-32V48H64c-8.8 0-16 7.2-16 16V448c0 8.8 7.2 16 16 16H320zM0 64C0 28.7 28.7 0 64 0H229.5c17 0 33.3 6.7 45.3 18.7l90.5 90.5c12 12 18.7 28.3 18.7 45.3V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V64z"/></svg>
+                            </div>
+                        </div>
+                        <div class="text">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lacinia fermentum gravida.</p>
+                        </div>
+                        <div class="triangle"></div>
+                    </div>
+
+                </section>
+            </section>
         </section>
     </main>
 
 <!--Stopka ____________________________________-->
 
-    <footer class="footer">
+    <footer class="footer" id="footer-anchor">
         <section class="nav-footer">
             <header class="nav-header">
                 <p>Nawigation:</p>
             </header>
             <nav class="nav-reference">
                 <ul>
-                    <li><a href=""><div class="align"><i class="fa-solid fa-house" style="color: #ffffff;"></i></div>Home</a></li>
+                    <li><a href="#home-anchor"><div class="align"><i class="fa-solid fa-house" style="color: #ffffff;"></i></div>Home</a></li>
 
-                    <li><a href=""><div class="align"><i class="fa-solid fa-user" style="color: #ffffff;"></i></div>About me</a></li>
+                    <li><a href="#about-anchor"><div class="align"><i class="fa-solid fa-user" style="color: #ffffff;"></i></div>About me</a></li>
 
-                    <li><a href=""><div class="align"><i class="fa-solid fa-lightbulb fa-lg" style="color: #ffffff;"></i></div>Stack</a></li>
+                    <li><a href="#stack-anchor"><div class="align"><i class="fa-solid fa-lightbulb fa-lg" style="color: #ffffff;"></i></div>Stack</a></li>
 
-                    <li><a href=""><div class="align"><i class="fa-brands fa-angular fa-lg" style="color: #ffffff;"></i></div>Project</a></li>
+                    <li><a href="#projects-anchor"><div class="align"><i class="fa-brands fa-angular fa-lg" style="color: #ffffff;"></i></div>Project</a></li>
                 </ul>
             </nav>
         </section>
